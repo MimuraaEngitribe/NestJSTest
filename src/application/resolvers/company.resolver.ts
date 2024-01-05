@@ -1,7 +1,7 @@
 import { Resolver, Mutation, Args, Query } from '@nestjs/graphql';
-import { CompanyService } from './company.service';
-import { Company } from './models/company.model';
-import { CompanyInput } from './models/Company.input.model';
+import { CompanyService } from '../../domain/company.service';
+import { Company } from '../../domain/models/company.model';
+import { CompanyInput } from '../../domain/models/Company.input.model';
 
 @Resolver(() => Company)
 export class CompanyResolver {

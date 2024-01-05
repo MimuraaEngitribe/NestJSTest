@@ -1,5 +1,3 @@
-DROP TABLE IF EXISTS `company`;
-
 -- CreateTable
 CREATE TABLE `Company` (
     `id` INTEGER NOT NULL AUTO_INCREMENT,
