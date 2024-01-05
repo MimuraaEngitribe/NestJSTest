@@ -8,10 +8,7 @@ import { GraphQLModule } from '@nestjs/graphql';
   
     GraphQLModule.forRoot<ApolloDriverConfig>({
       driver: ApolloDriver,
-      // typePaths: ['./**/*.graphql'],
-      autoSchemaFile: 'company.graphql',
-      // autoSchemaFile: true,  // スキーマを自動的に生成する
-      // その他のGraphQLの設定
+      autoSchemaFile: 'src/infrastructure/graphql/company.graphql',
     }),
   ],
   controllers: [],
