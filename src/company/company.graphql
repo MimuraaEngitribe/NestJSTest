@@ -9,12 +9,11 @@ input CompanyInput {
 }
 
 type Query {
-  findAll: [Company]!
-  findOne(id: ID!): Company
+  getCompany(id: ID!): Company
 }
 
 type Mutation {
-  create(company: CompanyInput!): Company!
-  update(id: ID!, company: CompanyInput!): Company!
+  create(company: CompanyInput!): Company
+  update(id: ID!, company: CompanyInput!): Company
   delete(id: ID!): Company
 }
